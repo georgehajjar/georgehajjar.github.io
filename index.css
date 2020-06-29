@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/* * {
+border: 1px solid rgba(255, 0, 0, 1);
+} */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 60px 0 0 0;
+  background-color: #43454d;
+  height: 100%
+}
+
+
+/* Header CSS */
+
+header {
+  width: 100%;
+  background-color: #1f2024;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 8vh;
+  position: relative;
+}
+
+.name {
+  color: white;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 200;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  /* Center vertically */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+nav a {
+  color: white;
+  font-family: Raleway;
+  font-size: 14px;
+  text-transform: lowercase;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: .4em;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 35px;
+}
+
+.underline_animation::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transform: scaleX(0);
+  visibility: hidden;
+  -webkit-transition: all .6s ease;
+}
+
+.underline_animation:hover::after {
+  -webkit-transform: scaleX(1);
+  visibility: visible;
+}
+
+/* Footer CSS */
+
+footer {
+  width: 100%;
+  background-color: #1f2024;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-container {
+  width: 90%;
+  height: 5vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+footer span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Montserrat;
+}
+
+footer span label {
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: #c1c0c0;
+}
+
+.links {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.links a {
+  margin-left: 12px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.links a:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,231 @@
+<style type="text/css">
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/* * {
+border: 1px solid rgba(255, 255, 255, 1);
+} */
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 60px 0 0 0;
+  background-color: #16171a;
+  height: 100%;
+}
+
+.grid-container {
+  width: 90%;
+  margin: 120px auto 120px auto; /* base is 60px from top */
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr; /*repeat(2, 1fr);*/
+  grid-template-rows: auto;
+}
+
+.project-title {
+  margin: 0;
+  width: auto;
+  color: #2b62bc;
+  font-size: 45px;
+  font-family: "Raleway";
+  -webkit-font-smoothing: antialiased;
+}
+
+.project-description {
+  margin: 10px 0 0 0;
+  color: #747679;
+  font-size: 17px;
+  font-family: "Source Sans Pro";
+  -webkit-font-smoothing: antialiased;
+}
+
+.uome, .CryptoCharts, .cashcounter, .waterTimer {
+  background-color: #1f2024;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  border-radius: 25px;
+}
+
+.uome {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.CryptoCharts {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.cashcounter {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.waterTimer {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.uomeDisplay, .CryptoChartsDisplay, .cashcounterDisplay, .waterTimerDisplay {
+  position: relative;
+  margin: 80px auto 0 auto;
+}
+
+.uomeInfo {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 2% 0 0 5%;
+}
+
+.uomeDisplay {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.CryptoChartsInfo {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 2% 0 0 5%;
+}
+
+.CryptoChartsDisplay {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cashcounterInfo {
+  grid-column: 1;
+  grid-row: 3;
+  margin: 2% 0 0 5%;
+}
+
+.cashcounterDisplay {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.waterTimerInfo {
+  grid-column: 1;
+  grid-row: 4;
+  margin: 2% 0 0 5%;
+}
+
+.waterTimerDisplay {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.uomeDisplay img, .CryptoChartsDisplay img, .cashcounterDisplay img, .waterTimerDisplay img {
+  display: block;
+  margin: auto;
+}
+
+@media(max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .uome {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .CryptoCharts {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .cashcounter {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .waterTimer {
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+
+</style>
+
+<head>
+  <!-- <script src="projects.js"></script> -->
+</head>
+<body>
+
+  <div class="grid-container">
+
+    <div class="uome">
+      <div class="uomeInfo">
+        <p class="project-title">
+          <a class="project-title" href="https://github.com/georgehajjar/uome" target="_blank" style="text-decoration: none">uome</a>
+        </p>
+        <p id="uomeDescription" class="project-description"></p>
+        <p id="uomeLastUpdated" class="project-description">Last Updated: </p>
+        <p id="uomeTotalCommits" class="project-description">Total Commits: </p>
+        <p id="uomeLanguages" class="project-description">Languages: </p>
+      </div>
+      <div class="uomeDisplay">
+        <img src="assets/images/uomeApp.png" width=100px>
+      </div>
+    </div>
+
+    <div class="CryptoCharts">
+      <div class="CryptoChartsInfo">
+        <p class="project-title">
+          <a class="project-title" href="https://github.com/georgehajjar/CryptoCharts" target="_blank" style="text-decoration: none">CryptoCharts</a>
+        </p>
+        <p id="CryptoChartsDescription" class="project-description"></p>
+        <p id="CryptoChartsLastUpdated" class="project-description">Last Updated: </p>
+        <p id="CryptoChartsTotalCommits" class="project-description">Total Commits: </p>
+        <p id="CryptoChartsLanguages" class="project-description">Languages: </p>
+      </div>
+      <div class="CryptoChartsDisplay">
+        <img src="assets/images/cryptochartsApp.png" width=100px>
+      </div>
+    </div>
+
+    <div class="cashcounter">
+      <div class="cashcounterInfo">
+        <p class="project-title">
+          <a class="project-title" href="https://github.com/georgehajjar/cashcounter" target="_blank" style="text-decoration: none">cashcounter</a>
+        </p>
+        <p id="cashcounterDescription" class="project-description"></p>
+        <p id="cashcounterLastUpdated" class="project-description">Last Updated: </p>
+        <p id="cashcounterTotalCommits" class="project-description">Total Commits: </p>
+        <p id="cashcounterLanguages" class="project-description">Languages: </p>
+      </div>
+      <div class="cashcounterDisplay">
+        <img src="assets/images/cashcounterApp.png" width=46%>
+      </div>
+    </div>
+
+    <div class="waterTimer">
+      <div class="waterTimerInfo">
+        <p class="project-title">
+          <a class="project-title" href="https://github.com/georgehajjar/waterTimer" target="_blank" style="text-decoration: none">waterTimer</a>
+        </p>
+        <p id="waterTimerDescription" class="project-description"></p>
+        <p id="waterTimerLastUpdated" class="project-description">Last Updated: </p>
+        <p id="waterTimerTotalCommits" class="project-description">Total Commits: </p>
+        <p id="waterTimerLanguages" class="project-description">Languages: </p>
+      </div>
+      <div class="waterTimerDisplay">
+        <img src="assets/images/waterTimerApp.png" width=50%>
+      </div>
+    </div>
+
+  </div>
+
+</body>

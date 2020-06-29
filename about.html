@@ -1,0 +1,126 @@
+<style type="text/css">
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/* * {
+border: 1px solid rgba(255, 255, 255, 0.8);
+} */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 60px 0 0 0;
+  background-color: #16171a;
+  height: 100%;
+}
+
+.grid-container {
+  width: 90%;
+  margin: 170px auto 0 auto; /* base is 60px from top */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr; /*repeat(2, 1fr);*/
+  grid-template-rows: auto;
+}
+
+.grid1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.grid3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.picture {
+  grid-column: 2;
+  grid-row: 1 / 4;
+}
+
+.welcome-text {
+  margin: 0;
+  width: auto;
+  color: #2b62bc;
+  font-size: 45px;
+  font-family: "Raleway";
+  -webkit-font-smoothing: antialiased;
+}
+
+.info {
+  margin: 0;
+  max-width: 90%;
+  color: #747679;
+  font-size: 17px;
+  font-family: "Source Sans Pro";
+  -webkit-font-smoothing: antialiased;
+}
+
+.email {
+  text-decoration: none;
+  font-weight: bold;
+  color: #747679;
+}
+
+.picture img {
+  float: right;
+  border-radius: 2%;
+}
+
+@media(max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .welcome-text {
+    padding-bottom: 18px;
+  }
+
+  .picture {
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+
+@media(max-width: 600px) {
+  .info, .email {
+    font-size: 14px;
+  }
+  .picture img {
+    width: 80%;
+    height: 80%;
+  }
+
+}
+
+</style>
+
+<body>
+
+  <div class="grid-container">
+    <div class="grid1">
+      <p class="welcome-text">hey, I'm george.</p>
+    </div>
+    <div class="grid2">
+      <p class="info">I'm a 4th year Computer and Systems Engineering student at Carleton University with a deep passion for technology and software as a service. Technically skilled, and comfortable with numerous programming languages and tools. A hard worker, critical thinker and a fast learner, I strongly believe in the impact that software engineers can have on the future of business and I intend to be in the heart of it.</p>
+    </div>
+    <div class="grid3">
+      <p class="info">Aside from developing software for fun, I enjoy playing tennis, cooking, healthy eating and exercise.<br><br>I am currently seeking my final internship beginning Summer of 2019. If you have any questions or opportunities, please feel free to email me at <a href="mailto:georgehajjar99@gmail.com" target="_top" class="email">georgehajjar99@gmail.com</a>
+      </p>
+    </div>
+    <div class="picture">
+      <img src="assets/images/headshot.png" height="400" width="600">
+    </div>
+  </div>
+
+</body>
