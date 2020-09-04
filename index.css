@@ -14,7 +14,6 @@ border: 1px solid rgba(255, 0, 0, 1);
   --text-white: rgb(220, 220, 220);  
 }
 
-
 html {
   position: relative;
   min-height: 100%;
@@ -24,7 +23,7 @@ html {
 body {
   margin: 0 auto;
   background-color: var(--main-grey);
-  height: 100%
+  height: 100%;
 }
 
 /* Header CSS */
@@ -105,46 +104,55 @@ nav li {
 }
 
 .container {
-  margin-top: 8em;
+  margin-top: 4.5em;
 }
 
 /* Introduction CSS */
 
 .intro {
-  height: calc(100vh - 8em);
+  
 }
 
 .intro-container {
+  height: calc(100vh - 4.5em);
   margin: 0 auto;
   width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 .intro-container h1 {
-  padding-top: 2em;
+  margin: 0;
+  padding-top: 2.5em;
   text-align: center;
   color: var(--text-white);
-  font-size: 2.75em;
+  font-size: 2.25vw;
   font-family: Montserrat;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
 }
 
 .intro-container h2 {
-  padding-bottom: 1em;
+  margin: 0;
+  padding: 1em 0;
   text-align: center;
   color: var(--text-white);
-  font-size: 2em;
+  font-size: 1.5vw;
   font-family: Montserrat;
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
 }
 
-.intro-container img {
-  width: 30vh;
-  margin: 0 auto;
-  display: block;
+.intro-container .memoji-image {
+  width: 20vh;
+  margin: 2em auto 0 auto;
   background-color: var(--main-white);
   border-radius: 50%;
+}
+
+.intro-container .layout-image {
+  width: 40vw;
+  margin: auto auto 0 auto;
 }
 
 /* About CSS */
@@ -240,8 +248,7 @@ nav li {
 /* Projects CSS */
 
 .projects {
-  padding-top: 5em;
-  height: calc(100vh - 8em);
+  min-height: calc(100vh - 8em);
 }
 
 .project-container {
